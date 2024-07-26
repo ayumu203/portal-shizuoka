@@ -1,0 +1,174 @@
+<!-- 競技プログラミング関係のサイト -->
+<!-- 授業関係のサイトも作ってここにリンク張りたい -->
+<!DOCTYPE HTML>
+<HTML lang="ja">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>マイページ</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .timeTableBox{
+            position:absolute;
+            top:20%;
+            left:10px;
+            width: 50%;
+            border: 2px solid;
+            border-color: lightblue;
+            border-radius: 1%;
+            width: 50%;
+            height: auto;
+        }
+        #time{
+            text-align: center;
+            color:white;
+        }
+        .timetable {
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        .timetable th, .timetable td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+        .timetable th {
+            background-color: #f2f2f2;
+        }
+    </style>    
+</head>
+
+<body>
+    <img src="img/logo_header.svg" class="headerImg">
+    <div class="menuBox1">
+        <a name="top"></a>
+        <p class="Menu1"><a class="menu1" href="">時間割</a></p>
+        <p class="Menu1"><a class="menu1" href="#todoList">TodoList</a></p>
+            <p class="Menu1"><a class="menu1" href="#bgm">BGM</a></p>
+        <p class="Menu1"><a class="menu1" href="#markdown">マークダウン</a></p>
+        <p class="Menu1"><a class="menu1" href="#links">各種リンク集</a></p>
+        <p class="Menu1"><a class="menu1" href="#files">重要書類</a></p>    
+    </div>
+    <div class="menuBox2">
+        <p class="Menu2"><a target="_blank" class="menu2" href="https://gakujo.shizuoka.ac.jp/portal/">学情システム</a></p>
+        <p class="Menu2"><a target="_blank" class="menu2"
+                href="https://vpn.inf.shizuoka.ac.jp/dana-na/auth/url_3/welcome.cgi">ファイルサーバー</a></p>
+        <p class="Menu2"><a target="_blank" class="menu2" href="https://syllabus.shizuoka.ac.jp/ext_syllabus/syllabusSearchDirect.do?nologin=on">シラバス</a>
+        </p>
+        <p class="Menu2"><a target="_blank" class="menu2" href="https://www.lib-city-hamamatsu.jp/">浜松市立図書館</a>
+        </p>
+            </div>
+    <hr id="line" size="3" color="skyblue">
+    <!-- ホーム画像 -->
+    <!-- <img class="homeImg" src="./img/home.jpg" width="100%" height="auto"> -->
+    <div id="contents">
+    <div class="timeBox">
+        <div id="time">
+            <p class="p_time" color="white">時間割</p>
+        </div>
+        <img class="timeImg" src="./img/timetable.png" width="50%" height="auto">
+    </div> 
+    <div class="scheduleBox">
+        <div id="time">
+            <p class="p_time" color="white">時間割</p>
+        </div>
+        <table>
+            <tr>
+                <th>時限</th>
+                <th>時間帯</th>
+            </tr>
+            <tr>
+                <td>1・2 時限</td>
+                <td>8時40分～10時10分</td>
+            </tr>
+            <tr>
+                <td>3・4 時限</td>
+                <td>10時20分～11時50分</td>
+            </tr>
+            <tr>
+                <td>5・6 時限</td>
+                <td>12時45分～14時15分</td>
+            </tr>
+            <tr>
+                <td>7・8 時限</td>
+                <td>14時25分～15時55分</td>
+            </tr>
+            <tr>
+                <td>9・10 時限</td>
+                <td>16時05分～17時35分</td>
+            </tr>
+        </table>
+    </div>
+    <div class="todoBox">
+        <a name="todoList"></a>
+        <div id="todo">
+            <p class="p_todo" color="white">todoList</p>
+        </div>
+    <div class="todo_element">
+    <input class="todo_input" type="text" id="taskInput" placeholder="科目名/課題名/締め切り">
+    <button class="todo_button" onclick="addTask()">add</button>
+    </div>
+    <div class="todo_element">
+        <input class="todo_input" type="number" id="deleteInput" placeholder="">
+        <button class="todo_button" onclick="deleteTask()">delete</button>
+        </div>
+    <ul id="taskList"></ul>
+    </div>
+    <!-- <div class="homeworkBox">
+        <div id="homework">
+            <p class="p_homework" color="white">直近の課題</p>
+        </div>
+        <img class="homeworkImg" src="./img/homework.png" width="100%" height="auto">
+    </div> -->
+    <div class="audioBox">
+        <a name="bfm"></a>
+        <div id="bgm">
+            <p class="p_bgm" color="white">作業用BGM</p>
+        </div>
+        <ul>
+            <li>C-side<button class="playButton playButton1" onclick="playMusic(0)">再生</button><button
+                    class="pauseButton pauseButton1" onclick="pauseMusic(0)">停止</button></li>
+            <li>Squid Squad<button class="playButton playButton2" onclick="playMusic(1)">再生</button><button
+                    class="pauseButton pauseButton2" onclick="pauseMusic(1)">停止</button></li>
+            <li>カレントトリップ<button class="playButton playButton3" onclick="playMusic(2)">再生</button><button
+                    class="pauseButton pauseButton3" onclick="pauseMusic(2)">停止</button></li>
+            <li>Unwelcome School<button class="playButton playButton4" onclick="playMusic(3)">再生</button><button
+                    class="pauseButton pauseButton4" onclick="pauseMusic(3)">停止</button></li>
+            <li>art of blade<button class="playButton playButton5" onclick="playMusic(4)">再生</button><button
+                    class="pauseButton pauseButton5" onclick="pauseMusic(4)">停止</button></li>
+            <li><p>星界ちゃんと可不ちゃんのおつかい合騒曲<button class="playButton playButton6" onclick="playMusic(5)">再生</button><button class="pauseButton pauseButton6" onclick="pauseMusic(5)">停止</button></p></li>
+        </ul>
+    </div>
+    <div class="folderBox">
+        <a name="markdown"></a>
+        <div id="folder">
+            <p class="p_folder" color="white">書類</p>
+        </div>
+        <ul>
+            <li><p><a target="_blank" href="https://github.com/ayumu203/myReository/blob/main/daily/todo.md">課題まとめ</a></p></li>
+            <li><p><a target="_blank" href="C:\Users\cs23017\OneDrive - Shizuoka University\ドキュメント\自分用サイト\img\年間スケジュール.pdf">年間行事予定表</a></p></li>
+        </ul>
+    </div>
+    <div class="linkBox">
+        <a name="links"></a>
+        <div id="link">
+            <p class="p_link" color="white">各種リンク</p>
+        </div>
+        <ul>
+            <li><p><a target="_blank" href="https://github.com/">GitHub</a></p></li>
+            <li><p><a target="_blank" href="https://atcoder.jp/?lang=ja">AtCoder</a></p></li>         
+            <li><p><a target="_blank" href="https://kenkoooo.com/atcoder/#/table/">AtCoder Problems</a></p></li>         
+        </ul>
+        <button onclick="location.href='#top'" id="upButton">TOP</button>
+    </div>
+    </div>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+
+
+</HTML>

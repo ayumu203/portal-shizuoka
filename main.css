@@ -1,0 +1,346 @@
+html{
+    min-height:200%;
+}
+body{
+    min-height:250%;
+    background-color: white;
+}
+li{
+    margin-top:20px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+th {
+    background-color: #f2f2f2;
+}
+
+/* 上のロゴ */
+.headerImg {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+/* 横のメニュー */
+/* 上のメニュー */
+.menuBox1 {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-color: skyblue;
+    width: 85%;
+    height: 40px;
+    border-radius: 0px 0px 0px 10px;
+    font-family:sans-serif,'BIZ UDMincho';
+}
+
+/* 下のメニュー */
+.menuBox2 {
+    position: absolute;
+    top: 34px;
+    left: 200px;
+    color: black;
+    font-family:sans-serif;
+}
+
+
+
+a {
+    text-decoration: none;
+}
+
+.Menu1 {
+    float: left;
+    margin-left: 180px;
+}
+
+.Menu2 {
+    float: left;
+    margin-left: 100px;
+}
+
+.menu1 {
+    color: white;
+    position: absolute;
+    top: 10px;
+}
+
+.menu2 {
+    color: black;
+}
+
+.menu1:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.menu2:visited {
+    color: black;
+    text-decoration: none;
+}
+
+/* 青線 */
+#line {
+    border-radius: 10px;
+    width: 99%;
+    position: absolute;
+    top: 70px;
+    left: 0px;
+}
+
+/* トップ画像 */
+.homeImg {
+    position: absolute;
+    top: 125px;
+    left: 0px;
+}
+
+.timeBox {
+    position: absolute;
+    top: 20%;
+    left: 10px;
+    border: 2px solid;
+    border-color: lightblue;
+    border-radius: 1%;
+    width: 50%;
+    height: auto;
+}
+
+#time {
+    width: 100%;
+    position: relative;
+    margin-top: 0px;
+    top: 0px;
+    right: 0px;
+    background-color: lightseagreen;
+}
+
+.timeImg {
+    width: 100%;
+    height: auto;
+}
+
+.p_time {
+    color: white;
+    text-align: center;
+}
+
+.p_homework {
+    color: white;
+    text-align: center;
+}
+
+.homeworkBox {
+    position: absolute;
+    /* top: 820px; */
+    top:1500px;
+    left:10px;
+    /* right: 10px; */
+    border: 2px solid;
+    border-color: lightblue;
+    border-radius: 1%;
+    width: 50%;
+    height: auto;
+}
+
+#homework {
+    width: 100%;
+    position: relative;
+    margin-top: 0px;
+    top: 0px;
+    right: 0px;
+    background-color: lightseagreen;
+}
+
+.homeworkImg {
+    position: relative;
+    top: 0px;
+    right: 0px;
+}
+
+.todoBox{
+    position:absolute;
+    /* top:1500px; */
+    /* left: 10px; */
+    top:63%;
+    right:10px;
+    border: 2px solid;
+    border-color: lightblue;
+    border-radius: 1%;
+    width: 45%;
+    height: auto;
+}
+#todo{
+    width: 100%;
+    position: relative;
+    margin-top: 0px;
+    top: 0px;
+    right: 0px;
+    background-color: lightseagreen;
+}
+.todo_element{
+    position:relative;
+    left:2%;
+    /* background-color:red; */
+}
+.p_todo{
+    text-align:center;
+    color:white;
+}
+.todo_input{
+    
+}
+.todo_button{
+    
+}
+
+.scheduleBox{
+    position: absolute;
+    top: 20%;
+    right: 10px;
+    border: 2px solid;
+    border-color: lightblue;
+    border-radius: 1%;
+    width: 45%;
+    height: auto;
+}
+
+.audioBox {
+    position: absolute;
+    top: 130%;
+    right: 10px;
+    border: 2px solid;
+    border-color: lightblue;
+    border-radius: 1%;
+    width: 45%;
+    height: auto;
+}
+
+#bgm {
+    width: 100%;
+    position: relative;
+    margin-top: 0px;
+    top: 0px;
+    right: 0px;
+    background-color: lightseagreen;
+}
+
+.p_bgm {
+    color: white;
+    text-align: center;
+}
+
+.playButton {
+    position: absolute;
+    right: 200px;
+}
+.pauseButton {
+    position: absolute;
+    right: 50px;
+}
+
+button {
+    display: inline-block;
+    border: 1px;
+    border-radius: 5px;
+    border-color: royalblue;
+    color: white;
+    background-color: royalblue;
+    padding: 3px 30px;
+}
+
+button:hover {
+    background-color: greenyellow;
+}
+
+button:active {
+    background-color: greenyellow;
+}
+
+.folderBox {
+    position: absolute;
+    top: 130%;
+    left: 10px;
+    border: 2px solid;
+    border-color: lightblue;
+    border-radius: 1%;
+    width: 50%;
+    height: auto;
+}
+
+#folder {
+    width: 100%;
+    position: relative;
+    margin-top: 0px;
+    top: 0px;
+    right: 0px;
+    background-color: lightseagreen;
+}
+.p_folder {
+    color: white;
+    text-align: center;
+}
+.li_folder{
+    color:black;
+    margin-left:15px;
+}
+.folder_menu{
+    color:black;
+}
+.folder_menu:visited {
+    color: black;
+    text-decoration: none;
+}
+
+/* ctrl/でコメントアウト */
+
+.linkBox{
+    position: absolute;
+    top: 150%;
+    left: 10px;
+    border: 2px solid;
+    border-color: lightblue;
+    border-radius: 1%;
+    width: 50%;
+    height: auto;
+}
+#link {
+    width: 100%;
+    position: relative;
+    margin-top: 0px;
+    top: 0px;
+    right: 0px;
+    background-color: lightseagreen;
+}
+.p_link {
+    color: white;
+    text-align: center;
+}
+#upButton{
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background: lightseagreen;
+    color: #FFF;
+    text-decoration: none;
+    text-align: center;
+    position:absolute;
+    top:150%;
+    right:15%;
+}
+
+
+#upButton:visited {
+    color: white;
+    text-decoration: none;
+}
