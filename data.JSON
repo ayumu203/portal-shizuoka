@@ -1,0 +1,52 @@
+{
+    "Monday": [
+      {
+  
+      },
+      {
+        "subject": "aaa",
+        "teacher": "bbb",
+        "classroom": "ccc"
+      },
+      {
+        "subject": "",
+        "teacher": "",
+        "classroom": ""
+      },
+      {
+        "subject": "",
+        "teacher": "",
+        "classroom": ""
+      },
+      {
+        "subject": "",
+        "teacher": "",
+        "classroom": ""
+      },
+      {
+        "subject": "",
+        "teacher": "",
+        "classroom": ""
+      }
+    ],
+    "TuesDay": [
+      {
+  
+      }
+    ],
+    "Wednesday": [
+      {
+  
+      }
+    ],
+    "Thursday": [
+      {
+  
+      }
+    ],
+    "Fryday": [
+      {
+  
+      }
+    ]
+  }

@@ -5,10 +5,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Weekday Timetable</title>
 <style>
+    *{
+        margin-left:1%;
+    }
+
     body {
         font-family: Arial, sans-serif;
         margin: 0;
         padding: 0;
+    }
+    input{
+        margin-top:1%;
     }
     .timetable {
         width: 50%;
@@ -23,6 +30,9 @@
     .timetable th {
         background-color: #f2f2f2;
     }
+    ::placeholder{
+        text-align: center;
+    }
 </style>
 </head>
 <body>
@@ -36,45 +46,184 @@
             <th>金曜日</th>
         </tr>
         <tr>
-            <td>1コマ<br>9:00 - 10:00</td>
-            <td>英語</td>
-            <td>数学</td>
-            <td>国語</td>
-            <td>理科</td>
-            <td>社会</td>
+            <td>1コマ<br>8:40 - 10:10</td>
+            <td>
+                <input id="Monday1Subject" placeholder="科目名" type="text"><br>
+                <input id="Monday1Teacher" placeholder="教員名" type="text"><br>
+                <input id="Monday1Classroom" placeholder="教室" type="text">
+            </td>
+            <td>
+                <input id="TuesDay1Subject" placeholder="科目名" type="text"><br>
+                <input id="TuesDay1Teacher" placeholder="教員名" type="text"><br>
+                <input id="TuesDayClassroom" placeholder="教室" type="text">
+            </td>
+            <td>
+                <input id="Wednesday1Subject" placeholder="科目名" type="text"><br>
+                <input id="Wednesday1Teacher" placeholder="教員名" type="text"><br>
+                <input id="Wednesday1Classroom" placeholder="教室" type="text">
+            </td>
+            <td>
+                <input id="Thursday1Subject" placeholder="科目名" type="text"><br>
+                <input id="Thursday1Teacher" placeholder="教員名" type="text"><br>
+                <input id="Thursday1Classroom" placeholder="教室" type="text">
+            </td>
+            <td>
+                <input id="Friday1Subject" placeholder="科目名" type="text"><br>
+                <input id="Friday1Teacher" placeholder="教員名" type="text"><br>
+                <input id="Friday1Classroom" placeholder="教室" type="text">
+            </td>
         </tr>
         <tr>
-            <td>2コマ<br>10:00 - 11:00</td>
-            <td>数学</td>
-            <td>国語</td>
-            <td>理科</td>
-            <td>社会</td>
-            <td>英語</td>
+            <td>2コマ<br>10:20 - 11:50</td>
+            <td>
+                <input id="Monday2Subject" placeholder="科目名" type="text"><br>
+                <input id="Monday2Teacher" placeholder="教員名" type="text"><br>
+                <input id="Monday2Classroom" placeholder="教室" type="text">
+            </td>
+            <td>
+                <input id="TuesDay2Subject" placeholder="科目名" type="text"><br>
+                <input id="TuesDay2Teacher" placeholder="教員名" type="text"><br>
+                <input id="TuesDayClassroom" placeholder="教室" type="text">
+            </td>
+            <td>
+                <input id="Wednesday2Subject" placeholder="科目名" type="text"><br>
+                <input id="Wednesday2Teacher" placeholder="教員名" type="text"><br>
+                <input id="Wednesday2Classroom" placeholder="教室" type="text">
+            </td>
+            <td>
+                <input id="Thursday2Subject" placeholder="科目名" type="text"><br>
+                <input id="Thursday2Teacher" placeholder="教員名" type="text"><br>
+                <input id="Thursday2Classroom" placeholder="教室" type="text">
+            </td>
+            <td>
+                <input id="Friday2Subject" placeholder="科目名" type="text"><br>
+                <input id="Friday2Teacher" placeholder="教員名" type="text"><br>
+                <input id="Friday2Classroom" placeholder="教室" type="text">
+            </td>
         </tr>
         <tr>
-            <td>3コマ<br>11:00 - 12:00</td>
-            <td>国語</td>
-            <td>理科</td>
-            <td>社会</td>
-            <td>英語</td>
-            <td>数学</td>
+            <td>3コマ<br>12:45 - 14:15</td>
+            <td>
+                <input id="Monday3Subject" placeholder="科目名" type="text"><br>
+                <input id="Monday3Teacher" placeholder="教員名" type="text"><br>
+                <input id="Monday3Classroom" placeholder="教室" type="text">
+            </td>
+            <td>
+                <input id="TuesDay3Subject" placeholder="科目名" type="text"><br>
+                <input id="TuesDay3Teacher" placeholder="教員名" type="text"><br>
+                <input id="TuesDayClassroom" placeholder="教室" type="text">
+            </td>
+            <td>
+                <input id="Wednesday3Subject" placeholder="科目名" type="text"><br>
+                <input id="Wednesday3Teacher" placeholder="教員名" type="text"><br>
+                <input id="Wednesday3Classroom" placeholder="教室" type="text">
+            </td>
+            <td>
+                <input id="Thursday3Subject" placeholder="科目名" type="text"><br>
+                <input id="Thursday3Teacher" placeholder="教員名" type="text"><br>
+                <input id="Thursday3Classroom" placeholder="教室" type="text">
+            </td>
+            <td>
+                <input id="Friday3Subject" placeholder="科目名" type="text"><br>
+                <input id="Friday3Teacher" placeholder="教員名" type="text"><br>
+                <input id="Friday3Classroom" placeholder="教室" type="text">
+            </td>
         </tr>
         <tr>
-            <td>4コマ<br>13:00 - 14:00</td>
-            <td>理科</td>
-            <td>社会</td>
-            <td>英語</td>
-            <td>数学</td>
-            <td>国語</td>
+            <td>4コマ<br>14:25 - 15:55</td>
+            <td>
+                <input id="Monday4Subject" placeholder="科目名" type="text"><br>
+                <input id="Monday4Teacher" placeholder="教員名" type="text"><br>
+                <input id="Monday4Classroom" placeholder="教室" type="text">
+            </td>
+            <td>
+                <input id="TuesDay4Subject" placeholder="科目名" type="text"><br>
+                <input id="TuesDay4Teacher" placeholder="教員名" type="text"><br>
+                <input id="TuesDayClassroom" placeholder="教室" type="text">
+            </td>
+            <td>
+                <input id="Wednesday4Subject" placeholder="科目名" type="text"><br>
+                <input id="Wednesday4Teacher" placeholder="教員名" type="text"><br>
+                <input id="Wednesday4Classroom" placeholder="教室" type="text">
+            </td>
+            <td>
+                <input id="Thursday4Subject" placeholder="科目名" type="text"><br>
+                <input id="Thursday4Teacher" placeholder="教員名" type="text"><br>
+                <input id="Thursday4Classroom" placeholder="教室" type="text">
+            </td>
+            <td>
+                <input id="Friday4Subject" placeholder="科目名" type="text"><br>
+                <input id="Friday4Teacher" placeholder="教員名" type="text"><br>
+                <input id="Friday4Classroom" placeholder="教室" type="text">
+            </td>
         </tr>
         <tr>
-            <td>5コマ<br>14:00 - 15:00</td>
-            <td>社会</td>
-            <td>英語</td>
-            <td>数学</td>
-            <td>国語</td>
-            <td>理科</td>
+            <td>5コマ<br>16:05 - 17:35</td>
+            <td>
+                <input id="Monday5Subject" placeholder="科目名" type="text"><br>
+                <input id="Monday5Teacher" placeholder="教員名" type="text"><br>
+                <input id="Monday5Classroom" placeholder="教室" type="text">
+            </td>
+            <td>
+                <input id="TuesDay5Subject" placeholder="科目名" type="text"><br>
+                <input id="TuesDay5Teacher" placeholder="教員名" type="text"><br>
+                <input id="TuesDayClassroom" placeholder="教室" type="text">
+            </td>
+            <td>
+                <input id="Wednesday5Subject" placeholder="科目名" type="text"><br>
+                <input id="Wednesday5Teacher" placeholder="教員名" type="text"><br>
+                <input id="Wednesday5Classroom" placeholder="教室" type="text">
+            </td>
+            <td>
+                <input id="Thursday5Subject" placeholder="科目名" type="text"><br>
+                <input id="Thursday5Teacher" placeholder="教員名" type="text"><br>
+                <input id="Thursday5Classroom" placeholder="教室" type="text">
+            </td>
+            <td>
+                <input id="Friday5Subject" placeholder="科目名" type="text"><br>
+                <input id="Friday5Teacher" placeholder="教員名" type="text"><br>
+                <input id="Friday5Classroom" placeholder="教室" type="text">
+            </td>
         </tr>
     </table>
+    <input type="submit" value="時間割情報を作成" onclick="show()">
+    <script type="text/javascript">
+        function show(){
+
+        class classInformation{
+            constructor(subject,teacher,classroom) {
+                this.subject=subject;
+                this.teacher=teacher;
+                this.classroom=classroom;
+            }
+        }
+        let timeTableData={
+            "Monday":[{
+            }],
+            "TuesDay":[{
+            }],
+            "Wednesday":[{
+            }],
+            "Thursday":[{
+            }],
+            "Fryday":[{
+            }]
+        }
+
+        const days=["Monday","Tuesday","Wednesday","Thursday","Fryday"];
+        //1コマから5コマまで
+            for(let o=1; o<=5; o++){
+                const subject = document.getElementById(days[0]+o+"Subject");
+                const teacher = document.getElementById(days[0]+o+"Teacher");
+                const classroom = document.getElementById(days[0]+o+"Classroom");
+                const inf = new classInformation(subject.value,teacher.value,classroom.value);
+                timeTableData.Monday.push(inf);
+                console.log(inf);
+            }
+        const jsonData = JSON.stringify(timeTableData);
+        localStorage.setItem("timeTableData",jsonData);
+        alert("時間割データを更新しました")
+    }
+    </script>
 </body>
 </html>

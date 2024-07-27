@@ -66,4 +66,16 @@ window.onload = () => {
         task.addEventListener('click', function () {
         });
     }
+
+    const timeTableData=JSON.parse(localStorage.getItem('timeTableData'));
+    const days=["Monday","Tuesday","Wednesday","Thursday","Fryday"];
+    //1コマから5コマまで
+        for(let o=1; o<=5; o++){
+            const subject = document.getElementById(days[0]+o+"Subject");
+            const teacher = document.getElementById(days[0]+o+"Teacher");
+            const classroom = document.getElementById(days[0]+o+"Classroom");
+            subject.innerHTML=timeTableData.Monday[o].subject;
+            teacher.innerHTML=timeTableData.Monday[o].teacher;
+            classroom.innerHTML=timeTableData.Monday[o].classroom;
+        }
 }

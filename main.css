@@ -113,6 +113,17 @@ a {
     height: auto;
 }
 
+.scheduleBox{
+    position: absolute;
+    top: 20%;
+    right: 10px;
+    border: 2px solid;
+    border-color: lightblue;
+    border-radius: 1%;
+    width: 45%;
+    height: auto;
+}
+
 #time {
     width: 100%;
     position: relative;
@@ -123,6 +134,11 @@ a {
 }
 
 .timeImg {
+    position:relative;
+    width: 100%;
+    height: auto;
+}
+.timeTable{
     width: 100%;
     height: auto;
 }
@@ -130,6 +146,11 @@ a {
 .p_time {
     color: white;
     text-align: center;
+}
+
+
+.scheduleTable{
+    width: 100%;
 }
 
 .p_homework {
@@ -201,16 +222,6 @@ a {
     
 }
 
-.scheduleBox{
-    position: absolute;
-    top: 20%;
-    right: 10px;
-    border: 2px solid;
-    border-color: lightblue;
-    border-radius: 1%;
-    width: 45%;
-    height: auto;
-}
 
 .audioBox {
     position: absolute;
