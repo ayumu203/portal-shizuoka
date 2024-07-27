@@ -78,4 +78,37 @@ window.onload = () => {
             teacher.innerHTML=timeTableData.Monday[o].teacher;
             classroom.innerHTML=timeTableData.Monday[o].classroom;
         }
+        for(let o=1; o<=5; o++){
+            const subject = document.getElementById(days[1]+o+"Subject");
+            const teacher = document.getElementById(days[1]+o+"Teacher");
+            const classroom = document.getElementById(days[1]+o+"Classroom");
+            subject.innerHTML=timeTableData.Tuesday[o].subject;
+            teacher.innerHTML=timeTableData.Tuesday[o].teacher;
+            classroom.innerHTML=timeTableData.Tuesday[o].classroom;
+        }
+        for(let o=1; o<=5; o++){
+            const subject = document.getElementById(days[2]+o+"Subject");
+            const teacher = document.getElementById(days[2]+o+"Teacher");
+            const classroom = document.getElementById(days[2]+o+"Classroom");
+            subject.innerHTML=timeTableData.WednesDay[o].subject;
+            teacher.innerHTML=timeTableData.WednesDay[o].teacher;
+            classroom.innerHTML=timeTableData.WednesDay[o].classroom;
+        }
+        for(let o=1; o<=5; o++){
+            const subject = document.getElementById(days[3]+o+"Subject");
+            const teacher = document.getElementById(days[3]+o+"Teacher");
+            const classroom = document.getElementById(days[3]+o+"Classroom");
+            subject.innerHTML=timeTableData.Thursday[o].subject;
+            teacher.innerHTML=timeTableData.Thursday[o].teacher;
+            classroom.innerHTML=timeTableData.Thursday[o].classroom;
+        }
+        for(let o=1; o<=5; o++){
+            const subject = document.getElementById(days[4]+o+"Subject");
+            const teacher = document.getElementById(days[4]+o+"Teacher");
+            const classroom = document.getElementById(days[4]+o+"Classroom");
+            subject.innerHTML=timeTableData.Friday[o].subject;
+            teacher.innerHTML=timeTableData.Friday[o].teacher;
+            classroom.innerHTML=timeTableData.Friday[o].classroom;
+        }
+
 }
