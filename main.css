@@ -225,7 +225,7 @@ a {
 
 .audioBox {
     position: absolute;
-    top: 130%;
+    top: 110%;
     right: 10px;
     border: 2px solid;
     border-color: lightblue;
@@ -315,7 +315,7 @@ button:active {
 
 #mapBox{
     position:absolute;
-    top: 90%;    
+    top: 110%;    
     left:10px;
     width: 45%;
     height: 50%;
@@ -346,7 +346,7 @@ button:active {
 
 .linkBox{
     position: absolute;
-    top: 150%;
+    top: 170%;
     left: 10px;
     border: 2px solid;
     border-color: lightblue;
