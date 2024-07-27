@@ -312,6 +312,38 @@ button:active {
 
 /* ctrl/でコメントアウト */
 
+
+#mapBox{
+    position:absolute;
+    top: 90%;    
+    left:10px;
+    width: 45%;
+    height: 50%;
+    border: 2px solid;
+    border-color: lightblue;
+    border-radius: 1%;
+}
+#map {
+    width: 100%;
+    position: relative;
+    margin-top: 0px;
+    top: 0px;
+    right: 0px;
+    background-color: lightseagreen;
+}
+
+.p_map{
+    color: white;
+    text-align: center;
+}
+
+.mapClass{
+    height:85%;
+    width: auto;
+    display: block;
+    margin:auto;
+}
+
 .linkBox{
     position: absolute;
     top: 150%;
